@@ -5,7 +5,7 @@ import com.cristianmayco.hexagonal.application.ports.out.FindAddressByZipCodeByC
 import com.cristianmayco.hexagonal.application.ports.out.InsertCustomerOutputPort
 
 class InsertCustomerUseCase(
-    private val findAddressByZipCodeByCodeOutputPort: FindAddressByZipCodeByCodeOutputPort
+    private val findAddressByZipCodeByCodeOutputPort: FindAddressByZipCodeByCodeOutputPort,
     private val insertCustomerOutputPort: InsertCustomerOutputPort
 ) {
 
