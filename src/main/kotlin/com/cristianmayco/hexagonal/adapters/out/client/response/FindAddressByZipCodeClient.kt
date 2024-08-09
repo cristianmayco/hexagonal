@@ -1,6 +1,5 @@
-package com.cristianmayco.hexagonal.adapters.out.client
+package com.cristianmayco.hexagonal.adapters.out.client.response
 
-import com.cristianmayco.hexagonal.adapters.out.client.response.AddressResponse
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
