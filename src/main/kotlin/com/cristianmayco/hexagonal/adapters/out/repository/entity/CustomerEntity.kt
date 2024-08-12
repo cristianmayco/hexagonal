@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.mongodb.core.mapping.MongoId
 
 
-@Document(collation = "customers")
+@Document(collection = "customers")
 data class CustomerEntity(
     @MongoId val id: String?,
     val name: String,

@@ -1,6 +1,6 @@
 spring:
   data:
-    mongo:
+    mongodb:
       host: localhost
       port: 27017
       authentication-database: admin
@@ -11,4 +11,4 @@ spring:
 cristianmayco:
   client:
     address:
-      url: http://localhost:8082/address
+      url: http://localhost:8082/addresses
