@@ -8,7 +8,7 @@ class FindCustomerByIdUseCase(
     private val findCustomerByIdOutputPort: FindCustomerByIdOutputPort
 ) {
 
-    fun find(id: String): Customer{
-        return findCustomerByIdOutputPort.find(id) ?: throw ObjectNotFoundException("Customer not found")
-    }
+    fun find(id: String): Customer =
+        findCustomerByIdOutputPort.find(id) ?: throw ObjectNotFoundException("Customer not found")
+
 }

@@ -13,12 +13,14 @@ data class CustomerEntity(
     val address: AddressEntity,
     val cpf: String,
     val isValidCpf: Boolean
-){
-   constructor(customer: Customer): this(
-       customer.id,
-       customer.name,
-       AddressEntity(customer.address!!),
-       customer.cpf,
-       customer.isValidCpf
-   )
+) {
+    constructor(customer: Customer) : this(
+        customer.id,
+        customer.name,
+        AddressEntity(customer.address!!),
+        customer.cpf,
+        customer.isValidCpf
+    )
+
+    fun toCustomer() = Customer(id, name, address.toAddress(), cpf, isValidCpf)
 }
