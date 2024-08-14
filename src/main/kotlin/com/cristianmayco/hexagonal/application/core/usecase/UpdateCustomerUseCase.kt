@@ -7,7 +7,7 @@ import com.cristianmayco.hexagonal.application.ports.out.UpdateCustomerOutputPor
 
 class UpdateCustomerUseCase(
     private val findCustomerByIdInputPort: FindCustomerByIdInputPort,
-    private val findAddressByZipCodeByCodeOutputPort: FindAddressByZipCodeByCodeOutputPort
+    private val findAddressByZipCodeByCodeOutputPort: FindAddressByZipCodeByCodeOutputPort,
     private val updateCustomerOutputPort: UpdateCustomerOutputPort
 ) {
 
